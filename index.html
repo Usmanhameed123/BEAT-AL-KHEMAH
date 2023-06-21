@@ -9,13 +9,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+  .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+ 
+}
+#logo2 {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      background-color: #25D366;
+      color: #fff;
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+.image-container2 {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
   body{
     margin: 0;
     padding: 0;
   }
   .owl-carousel .owl-item img
   {
-    width: 70%;
+    width: 54%;
   }
 .wrapper1{
   display: flex; 
@@ -259,6 +312,8 @@ color: white;
 border: 1px solid white;
 }
 #icon3{
+  padding-bottom: 7px;
+    margin: auto;
 color: #268ACD; 
 font-size: 50px; 
 }
@@ -358,7 +413,7 @@ color: #268ACD;;
 }
 .footer1{
 background-color: black;
-padding: 40px;  
+padding: 20px;  
 }
 .s3{
 float: right;  
@@ -592,17 +647,75 @@ input[type=submit]:hover {
 .wrap6btn{
   height: 90%;
 }
+.section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section h2 {
+      font-weight: bold;
+      color: #333;
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .section p {
+      font-size: 18px;
+      color: #777;
+      line-height: 1.6;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+    .animate-top {
+      opacity: 0;
+      transform: translateY(-50px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    .animate-top.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    /* Custom image styles */
+    .image-container {
+      position: relative;
+      height: 0;
+      padding-bottom: 75%; /* Adjust the aspect ratio as needed */
+      overflow: hidden;
+    }
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media  (max-width:990px) {
+      .navbar {
+        
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .logo{
+  position: relative;
+  }
+    }
 </style>
 <body>
 <div class="wrapper1">
+  <div class="logo">
+    <img src="logo.PNG" alt="Logo" id="logo2">
+  </div>
 <!-- <div class="row fix"  > -->
-<div class="col-md-6">
+
 
   <div class="title">
   <h1 class="heading1 mt-4">BEAT AL KHEMAH</h1>	
   </div>
 
-</div>
+
 <div class="">
 <div class="items mb-3">
 <button id="btn1" class="hover-underline-animation my-2 mx-2" type="submit">Home</button>    
@@ -613,6 +726,8 @@ input[type=submit]:hover {
 </div>
 	
 </div>
+
+
 	
 <!-- </div>	 -->
 
@@ -676,19 +791,56 @@ input[type=submit]:hover {
 <div class="container border-top border-secondary pt-5">
 </div>
 <div class="container">
-<p class="p1">Tent House offers car parking shades in a variety of shapes and
-  distinctive designs. We have taken the preferences of our
-  customers as well as the location of the sun's movement into
-  consideration. As a result, we offer them free advise and the best
-  car shade design for their area.</p>  
+<p class="p1">At مؤسسة بيت الخيمة للخيام, we are a trusted and experienced provider of high-quality sheds and outdoor structures in the Middle East. With over [Number of Years] years of expertise, we specialize in designing and constructing car parking sheds, pool sheds, garden canopies, and a variety of other sheds. Our commitment to excellence and customer satisfaction is evident in our superior craftsmanship and use of premium materials like PVC tarpaulin and steel structures. We understand the architectural styles of the region, ensuring our sheds seamlessly blend with the surroundings while providing the perfect balance of sunlight and shade. With our personalized approach, we work closely with our clients to deliver tailored shed solutions that enhance their properties. Choose مؤسسة بيت الخيمة للخيام for innovative designs, durability, and exceptional service that transforms your space</p>  
   
 </div>
 </div>
 <div class="wrapper4">
-<h1 class="heading2">WHAT WE DO</h1>
-<div class="container border-top border-secondary pt-5">
-</div>  
+<h1 class="heading2">Why Choose Us?</h1>
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image-container animate-top">
+        <img src="p1.PNG" alt="Right Image">
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="section">
+        <h2 class="animate-top">Your Trusted Experts in Building Quality Sheds</h2>
+        <p class="animate-top">Since [Year], we have been serving you with excellence and dedication. Our team of professionals is committed to creating innovative and durable shed solutions that meet your unique needs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row flex-md-row-reverse">
+    <div class="col-md-6">
+      <div class="image-container animate-top">
+        <img src="p2.jpeg" alt="Left Image">
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="section">
+        <h2 class="animate-top">Transform Your Space with Our Premium Sheds</h2>
+        <p class="animate-top">With our expertise, we can help you unleash the full potential of your space. Whether you need a car parking shed, pool shed, garden canopy, or any other type of shed, we have you covered.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image-container animate-top">
+        <img src="p3.jpeg" alt="Right Image">
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="section">
+        <h2 class="animate-top">Experience Superior Craftsmanship</h2>
+        <p class="animate-top">Our team takes pride in delivering top-notch craftsmanship and attention to detail in every project we undertake. We are dedicated to exceeding your expectations and ensuring your complete satisfaction.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
+  <h1 class="heading2">Which Services we Provide?</h1>
 <div class="row">
 <div class="col-md-4">
 <img class="img7" src="car-shade1.jpg">
@@ -749,48 +901,43 @@ input[type=submit]:hover {
 </div>  
 </div>
 <div class="wrapper5">
-<h1 class="heading4">Our Process</h1>
-<div class="container border-top border-secondary pt-5">
-</div> 
-<p class="p2">From concept all the way through to hand over, then maintained to protect your investment.</p>
-<div class="container text-center">
-<div class="row ">
-<div class="col-md-2 ">
-<button id="icon1" class="btn btn-outline-light rounded-circle text-center " onclick="paragraph()"><p class="p3">Design Process</p></button>
+  <h1 class="heading4">Our Process</h1>
+  <div class="container border-top border-secondary pt-5">
+    <p class="p2">From concept all the way through to handover, we follow a meticulous process to ensure the success of your project.</p>
+    <div class="row text-center">
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-light rounded-circle" onclick="paragraph()"><p class="p3">Design Process</p></button>
+      </div>
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-primary rounded-circle" onclick="paragraph1()"><p class="p3">Engineering Stage</p></button>
+      </div>
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-light rounded-circle" onclick="paragraph2()"><p class="p3">Project Management</p></button>
+      </div>
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-primary rounded-circle" onclick="paragraph3()"><p class="p3">Manufacturing Process</p></button>
+      </div>
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-light rounded-circle" onclick="paragraph4()"><p class="p3">Support Structures</p></button>
+      </div>
+      <div class="col-md-2">
+        <button id="icon1" class="btn btn-outline-primary rounded-circle" onclick="paragraph5()"><p class="p3">Installation Process</p></button>
+      </div>
+    </div>
+    <div id="p1" class="mt-5">
+      <p>Tensile fabric shade structure architecture is a blend of both science and art. It’s a collaborative process with our clients, resulting in the creation of something beautiful and buildable. Our goal is to bring your vision to life. We believe in the power of creativity and are fully equipped to design, manufacture, and build the most complex tensile fabric shade structures. With our origins in architecture, product design, and construction management, we ensure that every project is handled with expertise and precision.</p>
+    </div>
+  </div>
+</div>
 
-</div>
-<div class="col-md-2">
-<button id="icon1" class="btn btn-outline-primary rounded-circle text-center " onclick="paragraph1()" ><p class="p3">Engineering Stage</p></button></a>
-</div>
-<div class="col-md-2">
-<button id="icon1" class="btn btn-outline-light rounded-circle text-center " onclick="paragraph2()" ><p class="p3">Project Management</p></button>
-</div>
-<div class="col-md-2">
-<button id="icon1" class="btn btn-outline-primary rounded-circle text-center " onclick="paragraph3()" ><p class="p3">Manufacturing Process</p></button>
-</div>
-<div class="col-md-2">
-<button id="icon1" class="btn btn-outline-light rounded-circle text-center " onclick="paragraph4()" ><p class="p3">Suport structures</p></button>
-</div>
-<div class="col-md-2">
-<button id="icon1" class="btn btn-outline-primary rounded-circle text-center " onclick="paragraph5()" ><p class="p3">Installation Process</p></button>
-</div>
-</div>
-<div id="p1"> 
-<p>Tensile fabric shade structure architecture is a blend of both science and art. It’s a collaborative process with our clients with an end result of creating something beautiful and buildable. Our goal is to realise your vision. Creativity is the driving force behind what we do. We believe that if you can imagine it, we can design, manufacture and build it. With origins in architecture, product design and construction management, we are fully equipped to take on the most complicated projects of tensile fabric shades structures in Pakistan.</p> 
-</div>
-
-
-
-</div>
-</div>
 <div class="wrapper6">
 <div class="container">
 <div class="row">
   <div class="col-md-3">
-    <button class="btn1 btn-dark text-center text-light w-100 wrap6btn">ALL PROJECTS</button>
+    <button class="btn1 btn-dark text-center text-light w-100 wrap6btn ">ALL PROJECTS</button>
   </div>
   <div class="col-md-3">
-    <button class="btn1 btn-outline-dark text-center w-100 wrap6btn">SWIMMING POOL SHADES</button>
+    <button class="btn1 btn-outline-dark text-center w-100 wrap6btn ">SWIMMING POOL SHADES</button>
   </div>
   <div class="col-md-3">
     <button class="btn1 btn-outline-dark text-center w-100 wrap6btn">CAR PARKING</button>
@@ -825,43 +972,44 @@ input[type=submit]:hover {
 </div>  
   
 </div>
+<section id="project">
 <div class="wrapper7">
 <div class="container">
 <div class="row ">
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a1.jpeg">  
   
 </div> 
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a2.jpeg">  
   
 </div> 
   
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a3.jpeg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a4.jpeg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="shade2.jpeg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a6.jpeg">  
   
 </div>  
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="r9.jpg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="shade4.jpeg">  
   
 </div> 
@@ -873,25 +1021,25 @@ input[type=submit]:hover {
   
 
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="r14.jpg">  
   
 </div> 
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="shade6.jpeg">  
   
 </div>  
 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="r18.jpeg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a8.jpeg">  
   
 </div> 
-<div class="col-md-3 d-flex justify-content-center">
+<div class="col-md-3 d-flex justify-content-center animate-top">
 <img class="imgs" src="a7.jpeg">  
   
 </div>  
@@ -899,24 +1047,25 @@ input[type=submit]:hover {
 </div>           
 </div>  
 </div>
+</section>
 <div class="wrapper8">
 <div class="container">
 <div class="whole">
-<button id="btns" class="btn btn-outline-dark text-center ">View All Projects<i id="icon2" class="fa fa-angle-right"></i></button>  
+<a href="#project" id="btns" class="btn btn-outline-dark text-center ">View All Projects<i id="icon2" class="fa fa-angle-right"></i></a>  
 </div>
 <div class="whole1"> 
 <div class="row">
 <div class="col-md-6">
 <div class="displays">
 <i id="icon3" class="fa fa-download"></i>  
-<a href="./company profile Beat-al-khemeh.pdf"><button id="btns1" class="btn btn-outline-primary text-center ">DOWNLOAD COMPANY PROFILE<i id="icon2" class="fa fa-angle-right"></i></button> </a>
+<a href="./company profile Beat-al-khemeh.pdf"><button id="btns1" class="btn btn-outline-primary text-center ">COMPANY PROFILE<i id="icon2" class="fa fa-angle-right"></i></button> </a>
 </div>       
 </div>  
 
 <div class="col-md-6">
 <div class="displays">  
 <i id="icon3" class="fa fa-download"></i>
-<button id="btns1" class="btn btn-outline-primary text-center ">DOWNLOAD BROUCHER<i id="icon2" class="fa fa-angle-right"></i></button> 
+<a id="btns1" href="./Contact Detials.txt" class="btn btn-outline-primary text-center ">Contact Details<i id="icon2" class="fa fa-angle-right"></i></a> 
 </div>
 </div> 
     
@@ -947,25 +1096,32 @@ input[type=submit]:hover {
 </div>
 </div>
 </div>
-
+<h1 class="heading2" style="    /* border-bottom: 249px; */
+border-bottom-right-radius: 141px!important;
+margin-top: 12px;
+border-bottom-left-radius: 142px!important;
+/* text-decoration: underline; */
+font-weight: bold;
+border: 8px solid black;
+border-radius: 28px;">Our Esteemed Clients</h1>
 <div class="wrapper11 text-center mt-3">
 <div class="owl-carousel owl-theme ">
-    <div class="item">
+    <div class="image-container2">
       <img class="imgs3" src="sp.png" >
     </div>
-     <div class="item">
+     <div class="image-container2">
       <img class="imgs3" src="1.png" >
     </div>
-     <div class="item">
+     <div class="image-container2">
       <img class="imgs3" src="2.png" >
     </div>
-     <div class="item">
+     <div class="image-container2">
       <img class="imgs3" src="3.png" >
     </div>
-     <div class="item">
+     <div class="image-container2">
       <img class="imgs3" src="4.png" >
     </div>
-     <div class="item">
+     <div class="image-container2">
       <img class="imgs3" src="saudiwatercompany.jpg" >
     </div>
 </div>  
@@ -978,36 +1134,9 @@ input[type=submit]:hover {
 <div class="footer">
 <div class="container">
 <div class="row">
-<div class="col-md-4">
-<p class="p5">Tent House offers car parking shades in a variety of shapes and distinctive designs. We have taken the preferences of our customers as well as the location of the sun's movement into consideration. As a result, we offer them free advise and the best car shade design for their area.
 
-</p>  
-  
-</div> 
-<div class="col-md-4 ">
-<h5 class="heading8">Quick Links  </h5>  
-<a href=""><p class="p6">Home</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
-<a href=""><p class="p6">About Us</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
-<a href=""><p class="p6">Our Projects</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
-<a href=""><p class="p6">Our Services</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
-<a href=""><p class="p6">Contact Us</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
-<a href=""><p class="p6">About Tensile And Fabric Structures</p></a>
-<div class="container border-top border-secondary pt-0">
-</div> 
 
-  
-</div> 
-<div class="col-md-4 ">
+<div class="col-md-7 ">
     <h5 class="heading8">Contact Us  </h5> 
     <div class="mt-3">
 
@@ -1018,7 +1147,7 @@ input[type=submit]:hover {
     <p class="p8"><span class="s2 text-primary">Mobile: </span>+966 55 307 7471</p>
     <div class="container border-top border-secondary pt-0">
     </div> 
-    <p class="p8"><span class="s2 text-primary">Email: </span>ahameed@gmail.com</p>
+    <p class="p8"><span class="s2 text-primary">Email: </span>info@Beatalkhemah.com</p>
   </div>
 </div>
 
@@ -1029,10 +1158,13 @@ input[type=submit]:hover {
   
 </div>
 <div class="footer1">
-<p class="p8">© Copyright 2021 - BEAT AL KHEMAH | Design & Developed by Usman & Hassan <span class="s3"><i class="fa fa-facebook"></i>
+<p class="p8 " style="margin-left: 28px;">© Copyright 2021 - BEAT AL KHEMAH | Design & Developed by Usman & Hassan <span class="s3"><i class="fa fa-facebook"></i>
 <i class="fa fa-youtube"></i></span></p>  
 </div>  
   
+</div>
+<div class="whatsapp-icon" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i>
 </div>
 
 
@@ -1043,8 +1175,15 @@ input[type=submit]:hover {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    function openWhatsApp() {
+      var phoneNumber = '0966553077471'; // Replace with your actual WhatsApp phone number
+      
+      var url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=Hello%20from%20your%20website!';
+      window.open(url, '_blank');
+    }
+  </script>
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
     loop:true,
@@ -1064,7 +1203,30 @@ input[type=submit]:hover {
 })
  
  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script>
+   // Animate elements as they come into view
+   function animateOnScroll() {
+     var windowTop = $(window).scrollTop();
+     var windowBottom = windowTop + $(window).height();
 
+     $('.animate-top').each(function() {
+       var elementTop = $(this).offset().top;
+
+       if (elementTop <= windowBottom) {
+         $(this).addClass('is-visible');
+       }
+     });
+   }
+
+   // Event listener for scroll
+   $(window).scroll(function() {
+     animateOnScroll();
+   });
+
+   // Initial animation on page load
+   animateOnScroll();
+ </script>
 <script >
   var  result=document.getElementById('p1');
   function paragraph(){
